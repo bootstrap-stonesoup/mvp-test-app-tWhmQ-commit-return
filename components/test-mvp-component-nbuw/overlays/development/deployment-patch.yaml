@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-mvp-component-nbuw
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:afca6580bb6a7bc65d1556f532a4fb3f6e61b07a3e8a079afcaeb2ea9a86ae1a
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
